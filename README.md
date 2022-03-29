@@ -26,6 +26,7 @@
 
  - Kotlin 
  - Firebase
+ - Android Studio
  
  ### Funcionalidades 🛠
 
