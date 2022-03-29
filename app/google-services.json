@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "351480134346",
+    "project_id": "bubble-gum-music",
+    "storage_bucket": "bubble-gum-music.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351480134346:android:930ac9cf3780b5b0fe5233",
+        "android_client_info": {
+          "package_name": "com.voltaire.bubblegummusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351480134346-99b3a5jna2rvfuifk1bcl9fsb2p7l388.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKhbF1rCOOEsFgMxJDAvvjNA0z_WMg2J8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "351480134346-99b3a5jna2rvfuifk1bcl9fsb2p7l388.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Bubble Gum Music</string>
+    <string name="Phone_number">Número de Telefone</string>
+    <string name="password">Senha</string>
+    <string name="btn_register">Registrar-se</string>
+    <string name="btn_enter">Entrar</string>
+    <string name="txt_register">OU</string>
+    <string name="txt_verification_number">Você recebeu um código no seu celular, digite \n ele no campo abaixo.</string>
+    <string name="digite_código">Digite o código aqui</string>
+    <string name="avançar">AVANÇAR</string>
+    <string name="digite_numero">Digite seu número aqui</string>
+    <string name="txt_register_number">Digite seu número no campo abaixo e confime na próxima tela.</string>
+    <string name="profile_userName">Nome de usuário</string>
+    <string name="confirmation_password">Confirmação da senha</string>
+    <string name="profile_register_account">REGISTRAR</string>
+    <string name="welcome">Parabéns, você criou uma conta.</string>
+    <string name="logged">Você está logado como \n %1$s</string>
+    <string name="loggout">Deslogar</string>
+    <string name="profile_email">Email</string>
+    <string name="userName">Nome</string>
+    <string name="Email">Email</string>
+</resources>
