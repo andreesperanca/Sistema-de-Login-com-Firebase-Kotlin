@@ -2,35 +2,38 @@
 
 
 <h1 align="center">
+  <img style="border-radius: 50%;" src="./assets/splash.png" width="250px;" alt=""/>
+  <img style="border-radius: 50%;" src="./assets/login.png" width="250px;" alt=""/>
+  <img style="border-radius: 50%;" src="./assets/logged.png" width="250px;" alt=""/>
+  <img style="border-radius: 50%;" src="./assets/register.png" width="250px;" alt=""/>
+  <img style="border-radius: 50%;" src="./assets/create.png" width="250px;" alt=""/>
+  </h1>
   
-   <img style="border-radius: 50%;" src="./assets/gif" width="250px;" alt=""/>
-  
-</h1>
+  <h1 align="center">
+   <img style="border-radius: 50%;" src="./assets/gifBGM.gif" width="250px;" alt=""/>
+  </h1>
 
 
 <h1 align="center">
-  
    <img style="border-radius: 50%;" src="./assets/gifGame.gif" width="250px;" alt=""/>
-  
 </h1>
 
 
 ### Sobre :book:
- Aplicativo feito para por em prática consumo de API's utilizando RETROFIT / Coroutines e a arquitetura de projeto MVVM.
+ Um sistema de login e registro utilizando FirebaseAuth para autenticação de usuários e o FirebaseStore Database para guardar os dados dos mesmos.
  
  ### Tecnologias :rocket:
 
  - Kotlin 
- - Retrofit
- - Coroutines
- - MVVM
- - Android Studio
+ - Firebase
  
  ### Funcionalidades 🛠
 
 - [x] Splash Art.
-- [x] Requisição Web com Retrofit.
-- [x] Botão para pedir outra citação.
+- [x] FirebaseAuth.
+- [x] FirebaseStore Database.
+- [x] ProgressBar simples.
+- [ ] Butão customizável com ProgressBar.
 
 
 ### Autor
@@ -43,7 +46,9 @@ Contatos :
 [![Gmail Badge](https://img.shields.io/badge/-andreesperanca2010.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:andreesperanca2010@gmail.com)](mailto:andreesperanca2010@gmail.com)
 
 <a href="www.google.com">
+  
  <img style="border-radius: 50%;" src="./assets/collageGamePhoto.jpg" width="100px;" alt=""/>
+  
  <br />
 
   <a href="https://github.com/andreesperanca" title="">André Esperança</a>
