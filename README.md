@@ -20,7 +20,7 @@
 
 
 ### Sobre :book:
- Um sistema de login e registro utilizando FirebaseAuth para autenticação de usuários e o FirebaseStore Database para guardar os dados dos mesmos.
+ Um sistema de login e cadastro utilizando FirebaseAuth para autenticação de usuários e o FirebaseStore Database para guardar os dados dos mesmos.
  
  ### Tecnologias :rocket:
 
