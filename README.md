@@ -45,10 +45,15 @@ Contatos :
 [![Linkedin Badge](https://img.shields.io/badge/-André-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/andr%C3%A9-esperan%C3%A7a-34021a235/)](https://www.linkedin.com/in/andr%C3%A9-esperan%C3%A7a-34021a235/) 
 [![Gmail Badge](https://img.shields.io/badge/-andreesperanca2010.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:andreesperanca2010@gmail.com)](mailto:andreesperanca2010@gmail.com)
 
-<a href="www.google.com">
-  
- <img style="border-radius: 50%;" src="./assets/collageGamePhoto.jpg" width="100px;" alt=""/>
-  
+<a href="https://github.com/andreesperanca">
+ <br /> 
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/andreesperanca" width="100px;" alt=""/>
  <br />
-
   <a href="https://github.com/andreesperanca" title="">André Esperança</a>
+  
+  
+  
+  
+  
+
+
