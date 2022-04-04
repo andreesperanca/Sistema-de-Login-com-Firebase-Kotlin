@@ -40,7 +40,7 @@
 ### Autor
 
 
-Feito com ❤️ por André Esperança!
+Feito por André Esperança!
 
 Contatos :
 [![Linkedin Badge](https://img.shields.io/badge/-André-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/andr%C3%A9-esperan%C3%A7a-34021a235/)](https://www.linkedin.com/in/andr%C3%A9-esperan%C3%A7a-34021a235/) 
