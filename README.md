@@ -34,7 +34,7 @@
 - [x] FirebaseAuth.
 - [x] FirebaseStore Database.
 - [x] ProgressBar simples.
-- [ ] Butão customizável com ProgressBar.
+- [ ] Button customizável com ProgressBar.
 
 
 ### Autor
