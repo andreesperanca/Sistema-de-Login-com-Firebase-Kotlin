@@ -3,21 +3,15 @@
     <style name="Theme.BubbleGumMusic" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/pink_100</item>
-        <item name="colorPrimaryVariant">@color/pink_50</item>
+        <item name="colorPrimaryVariant">@color/green</item>
         <item name="colorOnPrimary">@color/pink_200</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/blue_500</item>
         <item name="colorSecondaryVariant">@color/blue_500</item>
         <item name="colorOnSecondary">@color/blue_500</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-    </style>
-
-
-    <style name="Theme.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-         <item name="android:statusBarColor">@color/pink_100</item>
-        <item name="android:windowBackground">@drawable/logo2</item>
     </style>
 
 </resources>

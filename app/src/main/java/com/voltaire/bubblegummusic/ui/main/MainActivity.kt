@@ -8,12 +8,12 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.voltaire.bubblegummusic.R
 import com.voltaire.bubblegummusic.databinding.ActivityMainBinding
-import com.voltaire.bubblegummusic.ui.login.view.LoginActivity
+import com.voltaire.bubblegummusic.ui.login.LoginActivity
 
 
 class MainActivity : AppCompatActivity() {
 
-        private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

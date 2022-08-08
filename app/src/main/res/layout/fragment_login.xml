@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginFragment">
+
+    <LinearLayout
+        android:id="@+id/linear_top_layout"
+        android:orientation="vertical"
+        android:background="@drawable/bordas_linear_layout_login"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center">
+
+        <ImageView
+            android:textSize="25sp"
+            android:src="@drawable/ondas_sonoras"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"/>
+
+
+        <TextView
+            android:text="@string/label_welcome"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:fontFamily="@font/mousem_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/linear_top_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="@string/label_login"
+            android:textSize="30sp"
+            android:fontFamily="@font/mousem_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/input_email"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:hint="@string/Email"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linear_top_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_password"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:hint="@string/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/input_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:text="@string/btn_enter"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:textSize="17sp"
+        android:id="@+id/tv_register"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/DontHaveAnAccount"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

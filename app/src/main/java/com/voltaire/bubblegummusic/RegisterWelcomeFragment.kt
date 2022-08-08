@@ -1,4 +1,4 @@
-package com.voltaire.bubblegummusic.ui.register
+package com.voltaire.bubblegummusic
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.voltaire.bubblegummusic.databinding.RegisterWelcomeFragmentBinding
-import com.voltaire.bubblegummusic.ui.login.view.LoginActivity
+import com.voltaire.bubblegummusic.ui.login.LoginActivity
 
 class RegisterWelcomeFragment : Fragment () {
 
@@ -27,9 +27,9 @@ class RegisterWelcomeFragment : Fragment () {
 
 
         binding.btnBacktologin.setOnClickListener {
-
             val intent = Intent(requireContext(), LoginActivity::class.java)
             startActivity(intent)
         }
+
     }
 }
