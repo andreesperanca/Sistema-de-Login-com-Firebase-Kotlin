@@ -12,7 +12,7 @@ class RegisterViewModel(
     ) : ViewModel()
 {
 
-    fun register(email: String, password: String, name: String )  = repository.register(email, password, name)
+    fun register(email: String, password: String, name: String, updateUI: ()-> Unit = {})  = repository.register(email, password, name, updateUI)
 
     fun logOut() { repository.logOut() }
 

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.voltaire.bubblegummusic.LoginFragment"
+        android:name="com.voltaire.bubblegummusic.ui.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -17,8 +17,12 @@
 
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.voltaire.bubblegummusic.RegisterFragment"
+        android:name="com.voltaire.bubblegummusic.ui.login.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 
 </navigation>

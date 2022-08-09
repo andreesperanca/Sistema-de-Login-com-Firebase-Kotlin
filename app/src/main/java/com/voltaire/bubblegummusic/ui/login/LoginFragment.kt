@@ -1,4 +1,4 @@
-package com.voltaire.bubblegummusic
+package com.voltaire.bubblegummusic.ui.login
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,7 +12,7 @@ import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.storage.FirebaseStorage
+import com.voltaire.bubblegummusic.R
 import com.voltaire.bubblegummusic.databinding.FragmentLoginBinding
 import com.voltaire.bubblegummusic.repositories.LoginRepository
 import com.voltaire.bubblegummusic.ui.main.MainActivity
@@ -74,18 +74,19 @@ class LoginFragment : Fragment() {
         super.onStart()
 
         binding.btnLogin.setOnClickListener {
+            binding.progressBar.visibility = View.VISIBLE
             val userEmail = binding.inputEmail.editText?.text.toString()
             val userPassword = binding.inputPassword.editText?.text.toString()
 
             if (checkTextView(userEmail, userPassword)) {
-                viewModel.login(userEmail, userPassword)
+                viewModel.login(userEmail, userPassword, updateUI = { binding.progressBar.visibility = View.INVISIBLE })
             } else {
                 toastCreator(
                     requireContext(),
                     message = "Os campos devem ser preenchidos corretamente."
                 )
+                binding.progressBar.visibility = View.INVISIBLE
             }
-
         }
 
         binding.tvRegister.setOnClickListener {

@@ -26,7 +26,7 @@
     <string name="label_email">Email</string>
     <string name="label_password">Senha</string>
     <string name="label_confirm_password">Confirme a senha</string>
-    <string name="label_welcome">Welcome in Bubble Gum Music</string>
+    <string name="label_welcome">Bubble Gum Music</string>
     <string name="sign_in">Faça login</string>
     <string name="label_login">Login</string>
     <string name="DontHaveAnAccount">Não tem conta? Registre-se!</string>

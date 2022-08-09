@@ -11,10 +11,7 @@ class LoginViewModel(
 ) : ViewModel()
 {
 
-    fun login (email: String, password: String) = repository.login(email, password)
-
-    fun register(email: String, password: String, name: String) = repository.register(email, password, name)
-
+    fun login (email: String, password: String, updateUI: ()-> Unit = {}) = repository.login(email, password, updateUI)
     fun getUserLiveData() = repository.getUserLiveData()
 
 }

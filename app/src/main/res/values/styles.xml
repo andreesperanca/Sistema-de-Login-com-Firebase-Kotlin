@@ -10,7 +10,7 @@
 
     <style name="DefaultBtn" parent="Widget.MaterialComponents.Button">
 
-        <item name="android:backgroundTint">@color/blue_500</item>
+        <item name="android:backgroundTint">@color/green</item>
 
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

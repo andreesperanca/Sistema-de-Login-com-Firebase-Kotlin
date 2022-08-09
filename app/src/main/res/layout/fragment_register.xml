@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginBottom="16dp"
-    tools:context=".RegisterFragment">
+    tools:context=".ui.login.RegisterFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:orientation="vertical"
@@ -80,6 +80,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 style="@style/DEFAULT_TIE"
+                android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
 
@@ -98,6 +99,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 style="@style/DEFAULT_TIE"
+                android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
 

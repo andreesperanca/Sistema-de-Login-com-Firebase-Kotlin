@@ -20,28 +20,32 @@ class LoginRepository(
     )
 {
 
-    fun login(email: String, password: String) {
+    fun login(email: String, password: String, updateUI: ()-> Unit = {}) {
         firebaseAuth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener {
                 if (it.isSuccessful) {
                     userLiveData.postValue(firebaseAuth.currentUser)
+                    updateUI()
                 } else {
                     Toast.makeText(application?.applicationContext, "S", Toast.LENGTH_LONG).show()
+                    updateUI()
                 }
             }
     }
 
-    fun register(email: String, password: String, name: String) {
+    fun register(email: String, password: String, name: String, updateUI: ()-> Unit = {}) {
         firebaseAuth.createUserWithEmailAndPassword(email,password)
             .addOnCompleteListener {
                 if(it.isSuccessful) {
                     saveUserFireBase(email, firebaseAuth.uid.toString(), name)
+                    updateUI()
                 } else {
                     Toast.makeText(
                         application?.applicationContext,
                         "Registration Failure: " + it.exception?.message,
                         Toast.LENGTH_SHORT
                     ).show()
+                    updateUI()
                 }
             }
 

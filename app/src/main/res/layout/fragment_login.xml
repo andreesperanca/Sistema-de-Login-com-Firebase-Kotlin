@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".LoginFragment">
+    tools:context=".ui.login.LoginFragment">
 
     <LinearLayout
         android:id="@+id/linear_top_layout"
@@ -13,7 +13,7 @@
         android:background="@drawable/bordas_linear_layout_login"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:gravity="center">
 
         <ImageView
@@ -24,35 +24,38 @@
             android:layout_width="wrap_content"
             android:layout_height="200dp"/>
 
-
-        <TextView
-            android:text="@string/label_welcome"
-            android:textColor="@color/white"
-            android:textSize="25sp"
-            android:fontFamily="@font/mousem_regular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
     </LinearLayout>
 
-    <LinearLayout
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_welcome"
+        android:text="@string/label_welcome"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linear_top_layout"
+        android:fontFamily="@font/mousem_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome"
         app:layout_constraintBottom_toBottomOf="parent"
         android:orientation="vertical"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="0dp">
 
         <TextView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
             android:text="@string/label_login"
-            android:textSize="30sp"
+            android:textSize="50sp"
             android:fontFamily="@font/mousem_regular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
 
     <com.google.android.material.textfield.TextInputLayout
-
         android:id="@+id/input_email"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="20dp"
@@ -62,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@id/linear_top_layout">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:inputType="text"
+            android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
@@ -78,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@id/input_email">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:inputType="text"
+            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
@@ -109,5 +112,14 @@
         android:layout_height="wrap_content"
         android:text="@string/DontHaveAnAccount"/>
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
