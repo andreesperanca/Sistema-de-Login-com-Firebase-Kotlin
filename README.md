@@ -2,43 +2,30 @@
 
 
 <h1 align="center">
-  <img style="border-radius: 50%;" src="./assets/splash.png" width="250px;" alt=""/>
-  <img style="border-radius: 50%;" src="./assets/login.png" width="250px;" alt=""/>
-  <img style="border-radius: 50%;" src="./assets/logged.png" width="250px;" alt=""/>
-  <img style="border-radius: 50%;" src="./assets/register.png" width="250px;" alt=""/>
-  <img style="border-radius: 50%;" src="./assets/create.png" width="250px;" alt=""/>
+  <img style="border-radius: 50%;" src="./assets/splashScreen.png" width="250px;" alt=""/>
+  <img style="border-radius: 50%;" src="./assets/loginScreen.png" width="250px;" alt=""/>
   </h1>
   
-  <h1 align="center">
-   <img style="border-radius: 50%;" src="./assets/gifBGM.gif" width="250px;" alt=""/>
-  </h1>
-
-
-<h1 align="center">
-   <img style="border-radius: 50%;" src="./assets/gifGame.gif" width="250px;" alt=""/>
-</h1>
-
+### Arquitetura do projeto 
+- `MVVM`
 
 ### Sobre :book:
- Um sistema de login e cadastro utilizando FirebaseAuth para autenticação de usuários e o FirebaseStore Database para guardar os dados dos mesmos.
+ Um sistema de login e cadastro utilizando Firebase para autenticação e banco de dados dos mesmos.
  
- ### Tecnologias :rocket:
-
- - Kotlin 
- - Firebase
- - Android Studio
+ 
+ ### Tecnologias e técnicas utilizadas :rocket:
+ 
+ - `Koin`: para injeções de depedências do projeto;
+ - `Firebase`: utilizado para autenticação de usuários dentro do aplicativo e como banco de dados do mesmo. 
+ - `Jetpack Navigation`: para a navegação de telas.
+ - `Splash Screen API`: para a criação de Splash Screen dentro do aplicativo;
  
  ### Funcionalidades 🛠
 
 - [x] Splash Art.
-- [x] FirebaseAuth.
-- [x] FirebaseStore Database.
-- [x] ProgressBar simples.
-- [ ] Button customizável com ProgressBar.
-
+- [x] Login e criação de usuários no banco de dados.
 
 ### Autor
-
 
 Feito por André Esperança!
 
@@ -51,10 +38,3 @@ Contatos :
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/andreesperanca" width="100px;" alt=""/>
  <br />
   <a href="https://github.com/andreesperanca" title="">André Esperança</a>
-  
-  
-  
-  
-  
-
-
