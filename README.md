@@ -2,7 +2,7 @@
 
 
 <h1 align="center">
-  <img style="border-radius: 50%;" src="./assets/splashScreen.png" width="250px;" alt=""/>
+  <img style="border-radius: 50%;" src="./assets/registerScreen.png" width="250px;" alt=""/>
   <img style="border-radius: 50%;" src="./assets/loginScreen.png" width="250px;" alt=""/>
   </h1>
   
