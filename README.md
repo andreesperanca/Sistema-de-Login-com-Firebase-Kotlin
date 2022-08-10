@@ -22,7 +22,7 @@
  
  ### Funcionalidades 🛠
 
-- [x] Splash Art.
+- [x] Splash Screen.
 - [x] Login e criação de usuários no banco de dados.
 
 ### Autor
