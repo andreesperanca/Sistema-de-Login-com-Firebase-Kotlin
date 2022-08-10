@@ -23,7 +23,8 @@
  ### Funcionalidades 🛠
 
 - [x] Splash Screen.
-- [x] Login e criação de usuários no banco de dados.
+- [x] Autenticação de usuários.
+- [x] Criação de usuários no banco de dados.
 
 ### Autor
 
