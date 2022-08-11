@@ -10,7 +10,7 @@
 - `MVVM`
 
 ### Sobre :book:
- Um sistema de login e cadastro utilizando Firebase para autenticação e banco de dados dos mesmos.
+ Um sistema de login e cadastro utilizando Firebase para autenticação de usuários e armazenar informações do mesmo. 
  
  
  ### Tecnologias e técnicas utilizadas :rocket:
