@@ -1,4 +1,4 @@
-<h1 align="center">Firebase + Kotlin -> Login e Cadastro</h1>
+<h1 align="center">Sistema de Login com Firebase + Kotlin</h1>
 
 
 <h1 align="center">
