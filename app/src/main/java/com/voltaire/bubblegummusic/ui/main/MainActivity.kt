@@ -24,8 +24,8 @@ class MainActivity : AppCompatActivity() {
         val user = Firebase.auth.currentUser
         user?.let {
             val name = user.email
-            binding.txtMain.text = getString(R.string.logged, name)
-            binding.btnLoggout.setOnClickListener {
+            binding.tvMain.text = getString(R.string.logged, name)
+            binding.btnLogout.setOnClickListener {
                 FirebaseAuth.getInstance().signOut()
                 user.let {
                     val intent = Intent(this, LoginActivity::class.java)

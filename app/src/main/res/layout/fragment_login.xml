@@ -10,15 +10,15 @@
     <LinearLayout
         android:id="@+id/linear_top_layout"
         android:orientation="vertical"
-        android:background="@drawable/bordas_linear_layout_login"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/blue"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:gravity="center">
 
         <ImageView
             android:textSize="25sp"
-            android:src="@drawable/ondas_sonoras"
+            android:src="@drawable/ic_cd"
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
@@ -27,44 +27,35 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/tv_SignIn"
+        android:textSize="30sp"
+        android:textStyle="bold"
         android:layout_marginTop="10dp"
-        android:id="@+id/tv_welcome"
-        android:text="@string/label_welcome"
-        android:textSize="40sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linear_top_layout"
-        android:fontFamily="@font/mousem_regular"
+        android:text="@string/sign_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
     <LinearLayout
-        app:layout_constraintTop_toBottomOf="@id/tv_welcome"
+        app:layout_constraintTop_toBottomOf="@id/tv_SignIn"
         app:layout_constraintBottom_toBottomOf="parent"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp">
 
-        <TextView
-            android:layout_marginTop="30dp"
-            android:layout_gravity="center"
-            android:text="@string/label_login"
-            android:textSize="50sp"
-            android:fontFamily="@font/mousem_regular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-
     <com.google.android.material.textfield.TextInputLayout
+
         android:id="@+id/input_email"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="20dp"
+        style="@style/DEFAULT_TIL"
         android:layout_width="match_parent"
-        android:hint="@string/Email"
         android:layout_height="wrap_content"
+        android:hint="@string/Email"
         app:layout_constraintTop_toBottomOf="@id/linear_top_layout">
 
         <com.google.android.material.textfield.TextInputEditText
+            style="@style/DEFAULT_TIE"
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
@@ -73,14 +64,14 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_password"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="20dp"
-        android:hint="@string/password"
+        style="@style/DEFAULT_TIL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/password"
         app:layout_constraintTop_toBottomOf="@id/input_email">
 
         <com.google.android.material.textfield.TextInputEditText
+            style="@style/DEFAULT_TIE"
             android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
@@ -92,25 +83,31 @@
         android:layout_marginTop="10dp"
         android:textColor="@color/white"
         android:layout_gravity="center"
+        android:layout_marginHorizontal="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/input_password"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="@color/blue"
         android:text="@string/btn_enter"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="@string/forgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
     <TextView
-        android:textSize="17sp"
         android:id="@+id/tv_register"
         android:textAlignment="center"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/DontHaveAnAccount"/>
+        android:text="@string/dontHaveAnAccount"/>
 
     <ProgressBar
         android:id="@+id/progressBar"

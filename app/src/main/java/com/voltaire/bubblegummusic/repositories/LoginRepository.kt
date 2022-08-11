@@ -27,7 +27,7 @@ class LoginRepository(
                     userLiveData.postValue(firebaseAuth.currentUser)
                     updateUI()
                 } else {
-                    Toast.makeText(application?.applicationContext, "S", Toast.LENGTH_LONG).show()
+                    Toast.makeText(application?.applicationContext, it.exception?.message, Toast.LENGTH_LONG).show()
                     updateUI()
                 }
             }

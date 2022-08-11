@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="green">#1ed760</color>
-    <color name="pink_100">#FF65C8</color>
-    <color name="pink_200">#F48FB1</color>
-    <color name="blue_100">#B3E5FC</color>
-    <color name="blue_300">#4FC3F7</color>
-    <color name="blue_500">#03A9F4</color>
+    <color name="blue">#3863ff</color>
     <color name="white">#FFFFFFFF</color>
     <color name="black">#000000</color>
 </resources>
