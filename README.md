@@ -2,8 +2,13 @@
 
 
 <h1 align="center">
+<<<<<<< HEAD
   <img style="border-radius: 50%;" src="./assets/loginScreen.png" width="250px;" alt=""/>
   <img style="border-radius: 50%;" src="./assets/registerScreen.png" width="250px;" alt=""/>
+=======
+  <img style="border-radius: 50%;" src="./assets/splashScreen.png" width="250px;" alt=""/>
+  <img style="border-radius: 50%;" src="./assets/loginScreen.png" width="250px;" alt=""/>
+>>>>>>> 54e71f07f0aa0a8b97a54180d3a2aa7cd2ba6de7
   </h1>
   
 ### Arquitetura do projeto 
@@ -22,9 +27,14 @@
  
  ### Funcionalidades 🛠
 
+<<<<<<< HEAD
 - [x] Splash Screen.
 - [x] Autenticação de usuários.
 - [x] Criação de usuários no banco de dados.
+=======
+- [x] Splash Art.
+- [x] Login e criação de usuários no banco de dados.
+>>>>>>> 54e71f07f0aa0a8b97a54180d3a2aa7cd2ba6de7
 
 ### Autor
 
