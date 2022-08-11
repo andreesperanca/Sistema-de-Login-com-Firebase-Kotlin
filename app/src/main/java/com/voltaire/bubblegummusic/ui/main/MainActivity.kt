@@ -17,22 +17,17 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        setTheme(R.style.Theme_BubbleGumMusic)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val user = Firebase.auth.currentUser
         user?.let {
-
             val name = user.email
-
             binding.txtMain.text = getString(R.string.logged, name)
-
-
             binding.btnLoggout.setOnClickListener {
                 FirebaseAuth.getInstance().signOut()
                 user.let {
-
                     val intent = Intent(this, LoginActivity::class.java)
                     startActivity(intent)
                     finish()

@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="FormEditText">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:padding">16dp</item>
-        <item name="android:layout_marginBottom">4dp</item>
-    </style>
-
     <style name="DefaultBtn" parent="Widget.MaterialComponents.Button">
 
         <item name="android:backgroundTint">@color/green</item>
@@ -27,38 +20,38 @@
 
     </style>
 
-        <style name="DEFAULT_TIL" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-            <item name="android:layout_margin">16dp</item>
-            <item name="fontFamily">@font/mousem_regular</item>
-        </style>
+    <style name="DEFAULT_TIL" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_margin">16dp</item>
+        <item name="fontFamily">@font/mousem_regular</item>
+    </style>
 
-        <style name="DEFAULT_TIE" parent="ThemeOverlay.Material3.MaterialTimePicker.Display.TextInputEditText">
-            <item name="fontFamily">@font/mousem_regular</item>
-            <item name="android:textSize">20sp</item>
-        </style>
+    <style name="DEFAULT_TIE" parent="ThemeOverlay.Material3.MaterialTimePicker.Display.TextInputEditText">
+        <item name="fontFamily">@font/mousem_regular</item>
+        <item name="android:textSize">20sp</item>
+    </style>
 
-        <style name="DEFAULT_BTN" parent="ThemeOverlay.Material3.Button">
-            <item name="android:textSize">24sp</item>
-            <item name="fontFamily">@font/mousem_regular</item>
-            <item name="android:textColor">@color/black</item>
-            <item name="android:background">@android:color/transparent</item>
-        </style>
+    <style name="DEFAULT_BTN" parent="ThemeOverlay.Material3.Button">
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">@font/mousem_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
 
-        <style name="DEFAULT_TXT_TITLE" parent="Widget.AppCompat.TextView">
-            <item name="android:textSize">35sp</item>
-            <item name="android:textStyle">bold</item>
-            <item name="android:layout_margin">8dp</item>
-            <item name="fontFamily">@font/mousem_regular</item>
-        </style>
+    <style name="DEFAULT_TXT_TITLE" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="fontFamily">@font/mousem_regular</item>
+    </style>
 
-        <style name="DEFAULT_TXT_RATTING" parent="Widget.AppCompat.TextView">
-            <item name="android:textSize">50sp</item>
-            <item name="fontFamily">@font/mousem_regular</item>
-        </style>
+    <style name="Theme.AppSplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/green</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ondas_sonoras</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.BubbleGumMusic</item>
+    </style>
 
-        <style name="DEFAULT_TXT_SKILLS" parent="Widget.AppCompat.TextView">
-            <item name="android:textSize">25sp</item>
-            <item name="fontFamily">@font/mousem_regular</item>
-        </style>
+
+
 
 </resources>

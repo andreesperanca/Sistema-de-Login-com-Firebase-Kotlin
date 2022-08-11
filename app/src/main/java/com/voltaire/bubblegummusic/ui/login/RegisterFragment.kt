@@ -16,34 +16,18 @@ import com.voltaire.bubblegummusic.R
 import com.voltaire.bubblegummusic.databinding.FragmentRegisterBinding
 import com.voltaire.bubblegummusic.repositories.LoginRepository
 import com.voltaire.bubblegummusic.ui.main.MainActivity
+import com.voltaire.bubblegummusic.viewmodel.LoginViewModel
 import com.voltaire.bubblegummusic.viewmodel.RegisterViewModel
 import com.voltaire.bubblegummusic.viewmodel.RegisterViewModelFactory
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class RegisterFragment : Fragment() {
 
     private lateinit var binding: FragmentRegisterBinding
-    private val auth = FirebaseAuth.getInstance()
-    private val store = FirebaseFirestore.getInstance()
-    private val userLiveData = MutableLiveData<FirebaseUser?>()
-    private val loggedOutLiveData = MutableLiveData<Boolean>()
-
-    private val viewModel by lazy {
-        val repository =
-            LoginRepository(
-                activity?.application,
-                firebaseAuth = auth,
-                userLiveData = userLiveData,
-                loggedOutLiveData = loggedOutLiveData,
-                firebaseStore = store
-            )
-        val factory = RegisterViewModelFactory(repository)
-        val provider = ViewModelProvider(this, factory)
-        provider[RegisterViewModel::class.java]
-    }
+    private val viewModel: RegisterViewModel by viewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
 
         viewModel.getUserLiveData().observe(this) {
             if (it != null) {
@@ -52,7 +36,6 @@ class RegisterFragment : Fragment() {
                 activity?.finish()
             }
         }
-
     }
 
     override fun onCreateView(
@@ -90,4 +73,5 @@ class RegisterFragment : Fragment() {
         })
         binding.btnRegister.isEnabled = false
     }
+
 }

@@ -20,44 +20,25 @@ import com.voltaire.bubblegummusic.util.checkTextView
 import com.voltaire.bubblegummusic.util.toastCreator
 import com.voltaire.bubblegummusic.viewmodel.LoginViewModel
 import com.voltaire.bubblegummusic.viewmodel.LoginViewModelFactory
+import org.koin.androidx.viewmodel.ext.android.sharedViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class LoginFragment : Fragment() {
 
     private lateinit var binding: FragmentLoginBinding
-    private val auth = FirebaseAuth.getInstance()
-    private val store = FirebaseFirestore.getInstance()
-    private val userLiveData = MutableLiveData<FirebaseUser?>()
-    private val loggedOutLiveData = MutableLiveData<Boolean>()
-
-
-    private val viewModel by lazy {
-        val repository =
-            LoginRepository(
-                activity?.application,
-                firebaseAuth = auth,
-                userLiveData = userLiveData,
-                loggedOutLiveData = loggedOutLiveData,
-                firebaseStore = store
-            )
-        val factory = LoginViewModelFactory(repository)
-        val provider = ViewModelProvider(this, factory)
-        provider[LoginViewModel::class.java]
-    }
-
+    private val viewModel: LoginViewModel by viewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         viewModel.getUserLiveData().observe(this) {
-
             if (it != null) {
                 val intent = Intent(requireContext(), MainActivity::class.java)
                 startActivity(intent)
                 activity?.finish()
             }
         }
-
 
     }
 
