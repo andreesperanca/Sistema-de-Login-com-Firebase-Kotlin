@@ -2,8 +2,8 @@
 
 
 <h1 align="center">
-  <img style="border-radius: 50%;" src="./assets/loginScreenApp.png" width="250px;" alt=""/>
-  <img style="border-radius: 50%;" src="./assets/registerScreenApp.png" width="250px;" alt=""/>
+  <img src="./assets/loginScreenApp.png" width="250px;" alt=""/>
+  <img src="./assets/registerScreenApp.png" width="250px;" alt=""/>
   </h1>
   
 ### Arquitetura do projeto 
